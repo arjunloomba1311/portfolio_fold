@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+    {% load static %}
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="">
@@ -55,14 +56,11 @@
             <li class="nav-item ">
               <a class="nav-link" href="https://www.linkedin.com/in/arjun-raj-loomba-63473719b/">Linkedin </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{%static 'Arjun_Loomba_resume.pdf'%}">Resume</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="{%url 'main'%}">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
         </div>
@@ -78,6 +76,7 @@
      <p>
        <a href="mailto:arjunrajloomba@gmail.com" class="btn btn-primary my-2">Email Me</a>
      </p>
+     <img src="{% static 'arjun.jpeg' %}" height = 300 width = 200>
    </div>
  </section>
 
